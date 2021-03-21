@@ -6,16 +6,16 @@ extern "C" {
 #include "func.h"
 }
 
-TEST(Func, no_sol) {
+TEST(Func, no_sol_positive) {
     solution res = Func(1, 2, 6);
     EXPECT_EQ(0, res.count);
 }
-TEST(Func, one_sol) {
+TEST(Func, one_sol_positive) {
     solution res = Func(4, 4, 1);
     EXPECT_EQ(-0.5, res.x1);
 }
 
-TEST(Func, two_sol) {
+TEST(Func, two_sol_positive) {
     solution res = Func(2, 5, 2);
     EXPECT_EQ(-2, res.x1);
     EXPECT_EQ(-0.5, res.x2);
@@ -47,17 +47,12 @@ TEST(Func, test8_negative){
 
 }
 TEST(Func, test9_negative){
-    solution res = Func(0, 0, 0);
-    EXPECT_EQ(0, res.count);
-
-}
-TEST(Func, test10_negative){
     solution res = Func(1, 1, 0);
     EXPECT_EQ(-1, res.x1);
     EXPECT_EQ(0, res.x2);
 
 }
-TEST(Func, test11_negative){
+TEST(Func, test10_negative){
     solution res = Func(1, 0, 0);
     EXPECT_EQ(0, res.x1);
 
