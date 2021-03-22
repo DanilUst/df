@@ -7,7 +7,7 @@ extern "C" {
 }
 
 TEST(Func, no_sol_positive) {
-    solution res = Func(1, 2, 6);
+    solution res = Func(1, 1, 10);
     EXPECT_EQ(0, res.count);
 }
 TEST(Func, one_sol_positive) {
