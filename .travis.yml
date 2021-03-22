@@ -6,6 +6,7 @@ before_install:
 addons:
   sonarcloud:
     organization: "danilust"
+    token: $SONAR_TOKEN
     
       
 
