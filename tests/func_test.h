@@ -33,13 +33,6 @@ TEST(Func, test4_negative){
     EXPECT_EQ(-1, res.x1);
 
 }
-TEST(Func, test5_negative){
-    solution res = Func(1, 0, -1);
-    EXPECT_EQ(2, res.count);
-    EXPECT_EQ(-1, res.x1);
-    EXPECT_EQ(1, res.x2);
-
-}
 TEST(Func, test6_negative){
     solution res = Func(1, 0, 1);
     EXPECT_EQ(0, res.count);
