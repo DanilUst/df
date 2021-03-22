@@ -9,8 +9,9 @@ solution Func(double a, double b, double c) {
             res.count = 0;
             return res;
         }else{
-        res.x1 = (-c)/b;
-        return res;
+            res.x1 = (-c)/b;
+            res.count = 1;
+            return res;
         }
     }
 
@@ -21,9 +22,11 @@ solution Func(double a, double b, double c) {
 
     }
     if(D == 0) {
+        res.count = 1;
         res.x1 = -b/(2*a);
     }
     if(D > 0) {
+        res.count = 2;
         res.x1 = (-b - sqrt(D)) / (2*a);
         res.x2 = (-b + sqrt(D)) / (2*a);
     }
