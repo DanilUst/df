@@ -16,14 +16,14 @@ solution Func(double a, double b, double c) {
 
     double D = pow(b, 2) - 4*a*c;
 
-    if(D < 0.0) {
+    if(D < 0) {
         res.count = 0;
 
     }
-    if(D == 0.0) {
+    if(D == 0) {
         res.x1 = -b/(2*a);
     }
-    if(D > 0.0) {
+    if(D > 0) {
         res.x1 = (-b - sqrt(D)) / (2*a);
         res.x2 = (-b + sqrt(D)) / (2*a);
     }
