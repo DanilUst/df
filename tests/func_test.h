@@ -45,11 +45,6 @@ TEST(Func, test6_negative){
     EXPECT_EQ(0, res.count);
 
 }
-TEST(Func, test7_negative){
-    solution res = Func(0, 0, 1);
-    EXPECT_EQ(0, res.count);
-
-}
 
 TEST(Func, test9_negative){
     solution res = Func(0, 0, 0);
