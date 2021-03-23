@@ -32,10 +32,7 @@ TEST(Func, test5_negative){
     EXPECT_EQ(0, res.count);
 
 }
-TEST(Func, test6_negative){
-    solution res = Func(0, 0, 0);
-    EXPECT_EQ(0, res.count);
-}
+
 TEST(Func, test7_negative){
     solution res = Func(1, 1, 0);
     EXPECT_EQ(2, res.count);
