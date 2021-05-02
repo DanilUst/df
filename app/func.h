@@ -10,3 +10,5 @@ typedef struct _solution {
 solution Func(double a, double b, double c);
 
 #endif
+
+
